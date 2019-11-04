@@ -17,10 +17,8 @@ export class ComandaComponent implements OnInit {
       chopp: this.formBuilder.control(''),
       pizza: this.formBuilder.control(''),
       recheio: this.formBuilder.control(''),
-      pessoa: this.formBuilder.control('')
-
+      pessoa: this.formBuilder.control(''),
+      taxaservico: this.formBuilder.control(true)
     })
-
   }
-
 }
