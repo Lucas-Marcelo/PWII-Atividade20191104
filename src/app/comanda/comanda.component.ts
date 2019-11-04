@@ -7,10 +7,20 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./comanda.component.css']
 })
 export class ComandaComponent implements OnInit {
+  formComanda: FormGroup;
 
   constructor(public formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    this.formComanda = this.formBuilder.group({
+      chopp: this.formBuilder.control(''),
+      pizza: this.formBuilder.control(''),
+      recheio: this.formBuilder.control(''),
+      pessoa: this.formBuilder.control('')
+
+    })
+
   }
 
 }
