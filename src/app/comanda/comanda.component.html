@@ -6,7 +6,7 @@
       <div id="comanda">
         <h1>COMANDA</h1>
 
-        <form action="">
+        <form [formGroup]="formComanda" (ngSubmit)="onProcessar()">
           <p>
             <label for="">Chopp</label>
             <input type="text" name="inChopp">           
